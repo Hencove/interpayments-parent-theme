@@ -1,0 +1,130 @@
+//
+//
+
+.wp-block-kadence-query {
+	.kadence-filter-wrap {
+		.btn-inner-wrap {
+			padding-left: 10px;
+			border-left: 2px solid var(--wp--preset--color--contrast);
+			&:first-child {
+				padding-left: 0;
+				border-left: unset;
+			}
+		}
+	}
+}
+
+//
+//
+.kt-tabs-wrap {
+	//
+	//	? these are touchups to the kadence tabs block which uses relatively simple and clean CMS settings
+	//
+	.kt-tabs-title-list {
+		> .kt-title-item {
+			text-align: center;
+			padding: 0px 32px;
+			&:not(:first-child) {
+				border-left: 2px solid var(--wp--preset--color--contrast);
+			}
+			&:first-child {
+				border-left: unset;
+			}
+		}
+		// kb-tabs collapse into accordion at 767px
+		@include media("<768px") {
+			justify-content: center;
+			> .kt-title-item {
+				padding: 0px;
+			}
+		}
+	}
+	.kt-tabs-accordion-title.kt-tab-title-inactive a {
+		border: 1px solid var(--wp--preset--color--contrast) !important;
+	}
+}
+
+.kt-blocks-accordion-header {
+	padding: var(--wp--preset--spacing--x-small) !important;
+}
+
+//
+//	this just cleans up the margins inside the pane
+.wp-block-kadence-pane.kt-accordion-pane {
+	p:first-child {
+		margin-top: 0;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+//
+//
+.wp-block-kadence-pane.kt-accordion-pane {
+	display: flex;
+	flex-flow: column nowrap;
+	.kt-accordion-panel {
+		&.kt-accordion-panel-active {
+			flex: 1;
+			.kt-accordion-panel-inner {
+				height: 100%;
+			}
+		}
+	}
+}
+//
+//
+//
+.kt-accordion-header-wrap {
+	.kt-blocks-accordion-header {
+		cursor: pointer;
+	}
+	.kt-blocks-accordion-title {
+		font-family: var(--wp--preset--font-family--secondary);
+		font-size: var(--wp--preset--font-size--x-large);
+	}
+	.kt-blocks-accordion-icon-trigger {
+		&::before,
+		&::after {
+			transition: all 0.4s $bezier;
+			height: 2px;
+		}
+	}
+}
+
+.wp-block-kadence-accordion {
+	.kt-blocks-accordion-title {
+		line-height: 1.375;
+	}
+	&.is-style-large-cols-1 {
+		.kt-blocks-accordion-title {
+			font-family: var(--wp--preset--font-family--secondary);
+			font-size: var(--wp--preset--font-size--max-40);
+		}
+		.kt-blocks-accordion-icon-trigger {
+			margin: 0 var(--wp--custom--spacing--gutter);
+			&::before,
+			&::after {
+				// transition: all 0.4s $bezier;
+				height: 2px;
+			}
+		}
+	}
+}
+
+.kt-button,
+.kt-btn {
+	padding: 16px 24px !important;
+}
+.kt-btn-inner-text {
+	letter-spacing: 1px;
+	font-size: var(--wp--preset--font-size--medium) !important;
+}
+
+
+// hide "the latest" filter buttons on mobile
+@include media("<phone") {
+	.wp-block-kadence-query-filter-buttons {
+		display: none;
+	}
+}

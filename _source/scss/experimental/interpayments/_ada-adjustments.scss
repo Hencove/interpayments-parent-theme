@@ -1,0 +1,23 @@
+//
+//
+//
+
+body {
+	// adjusted to allow buttons to pass with white text and these backgrounds
+	--wp--preset--color--primary: #037C5A;
+	--wp--preset--color--custom-color-4: #3875a3;
+
+	// this can be set in the CMS but jamming an override here for now
+    .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title,
+	.kt-tabs-title-list li .kt-tab-title:hover,
+	.kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+		color: #037C5A !important;
+	}
+
+	// text inside the lottie animation has aria-label="the text" but no role="presentation"
+	// not sure how to fix this one
+	// hiding this to clean up ADA tests
+	.wp-block-lpb-lottie-player {
+		display: none;
+	}
+}

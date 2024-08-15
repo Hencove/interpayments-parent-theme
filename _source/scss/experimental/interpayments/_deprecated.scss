@@ -1,0 +1,75 @@
+
+.kb-query-item.ip-education {
+	.wp-block-kadence-image + .wp-block-kadence-column {
+		// stretch col and enable pushing button to bottom
+		.kt-inside-inner-col {
+			display: flex;
+			flex-flow: column nowrap;
+		}
+		// the custom field displaying the challenge level
+		.wp-block-kadence-advancedheading:first-child {
+			margin: 0;
+			position: absolute;
+			top: 0;
+			transform: translate(-50%, -50%);
+			left: 50%;
+		}
+		// push read more button down to bottom of card
+		.wp-block-kadence-advancedbtn:last-child {
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+	}
+
+	// color shift for beginner category
+	&.edu-items-categories-beginner {
+		.wp-block-kadence-image + .wp-block-kadence-column {
+			.kt-inside-inner-col {
+				background-color: var(--wp--preset--color--secondary) !important;
+			}
+			.wp-block-kadence-advancedheading:first-child {
+				color: var(--wp--preset--color--secondary) !important;
+			}
+		}
+	}
+	// color shift for intermediate category
+	&.edu-items-categories-intermediate {
+		.wp-block-kadence-image + .wp-block-kadence-column {
+			.kt-inside-inner-col {
+				background-color: var(--wp--preset--color--custom-color-7) !important;
+			}
+			.wp-block-kadence-advancedheading:first-child {
+				color: var(--wp--preset--color--custom-color-7) !important;
+			}
+		}
+		.wp-block-kadence-advancedbtn:last-child .kt-button {
+			border-color: var(--wp--preset--color--custom-color-4) !important;
+			&:hover,
+			&:focus {
+				border: 2px solid var(--wp--preset--color--custom-color-4) !important;
+				color: var(--wp--preset--color--custom-color-7) !important;
+				background-color: var(--wp--preset--color--custom-color-10) !important;
+			}
+		}
+	}
+	// color shift for advanced category
+	&.edu-items-categories-advanced {
+		.wp-block-kadence-image + .wp-block-kadence-column {
+			.kt-inside-inner-col {
+				background-color: var(--wp--preset--color--custom-color-9) !important;
+			}
+			.wp-block-kadence-advancedheading:first-child {
+				color: var(--wp--preset--color--custom-color-9) !important;
+			}
+		}
+		.wp-block-kadence-advancedbtn:last-child .kt-button {
+			border-color: var(--wp--preset--color--custom-color-6) !important;
+			&:hover,
+			&:focus {
+				border: 2px solid var(--wp--preset--color--custom-color-6) !important;
+				color: var(--wp--preset--color--custom-color-9) !important;
+				background-color: var(--wp--preset--color--custom-color-12) !important;
+			}
+		}
+	}
+}

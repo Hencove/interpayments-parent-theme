@@ -1,0 +1,203 @@
+//
+//
+//
+
+//
+//
+
+@include media("<phone"){
+	.entry-content > .wp-block-group.alignfull:first-child > * {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+}
+
+body.home {
+	@include media("<=1200px") {
+		.has-motion-animation-column {
+			.wp-block-spacer {
+				display: none;
+			}
+
+			.is-motion-column {
+				display: none;
+			}
+		}
+	}
+}
+
+@include media("<=tablet") {
+	.wp-block-lpb-lottie-player {
+		display: none;
+	}
+
+	body .is-layout-flow .wp-block-image.alignright {
+		margin-left: auto;
+		margin-right: auto;
+		float: unset;
+	}
+}
+
+
+// detect and remove styling on columns that have spacing and borders between them
+@include media("<=tablet"){
+	.wp-block-column[style*="padding-left:var(--wp--preset--spacing--large)"] {
+		padding-left: unset !important;
+	}
+	.wp-block-column[style*="border-left-width:1px"] {
+		border-left: unset;
+	}
+}
+
+
+.wp-block-columns[style*="border-right-width:1px;"] {
+	border-right: unset;
+}
+
+.entry-content > .wp-block-group.alignfull:first-child > * {
+	@include media("<=1620px") {
+		padding-left: var(--wp--custom--spacing--gutter);
+		padding-right: var(--wp--custom--spacing--gutter);
+	}
+}
+
+@include media("<=1024px") {
+	.is-overflowing-hero-image {
+		display: none !important;
+	}
+}
+
+// 	switch light header to light green
+body.page-id-436,
+body.page-id-444,
+body.page-id-446,
+body.page-id-912,
+body.page-id-1103 {
+	header.site-header {
+		&,
+		> .alignfull {
+			background-color: var(--wp--preset--color--secondary) !important;
+		}
+	}
+}
+
+footer.wp-block-template-part {
+	&.is-the-mobile-footer {
+		display: none;
+		@include media("<=tablet") {
+			display: block;
+		}
+	}
+	&.is-the-desktop-footer {
+		display: none;
+		@include media(">tablet") {
+			display: block;
+		}
+	}
+}
+
+body.page-id-1759 {
+	.entry-content > .wp-block-group:first-child {
+		position: relative;
+		&::after {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			min-height: unset;
+			height: calc(var(--wp--preset--spacing--x-large) + 450px);
+			background-color: var(--wp--preset--color--neutral);
+			content: "";
+		}
+	}
+}
+
+body.page-id-462 {
+	.entry-content > .wp-block-group:first-child > .wp-block-cover {
+		position: relative;
+		&::after {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			min-height: unset;
+			height: var(--wp--preset--spacing--x-large);
+			background-color: var(--wp--preset--color--neutral);
+			content: "";
+		}
+	}
+}
+
+
+// 
+// 	! this is all interfering with global padding and basically doesnt do anything - time for it to go.
+// 
+// body.page-id-446,
+// body.page-id-1103,
+// body.page-id-912 {
+// 	.entry-content > .wp-block-group:first-child > .wp-block-cover {
+// 		position: relative;
+// 		// padding-bottom: calc(var(--wp--preset--spacing--x-large) + 80px) !important;
+// 		&::after {
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 0;
+// 			width: 100%;
+// 			min-height: unset;
+// 			height: 80px;
+// 			background-color: white;
+// 			content: "";
+// 		}
+// 	}
+// }
+
+.wp-block-post-template.is-layout-grid {
+	&.columns-4 {
+		@include media("<=1280px") {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+		@include media("<=1024px") {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+	&.columns-3 {
+		@include media("<=1024px") {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+}
+
+//
+//
+//
+//
+.wp-block-column
+	> p.has-primary-color.has-secondary-background-color.has-max-40-font-size {
+	@include media("<=tablet") {
+		display: inline-block;
+		margin: 0 auto;
+	}
+}
+
+//
+//
+//
+//
+.wp-block-query.is-style-uses-flexbox {
+	.wp-block-post-template {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+
+		> .wp-block-post {
+			flex: 0 1 320px;
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	html {
+		margin-top: 0px !important;
+	}
+}

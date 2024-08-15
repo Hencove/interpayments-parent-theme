@@ -1,0 +1,19 @@
+<?php
+/**
+ * Title: header
+ * Slug: hencovestarter/header
+ * Categories: hidden
+ * Inserter: no
+ */
+?>
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"dimensions":{"minHeight":""},"border":{"bottom":{"color":"var:preset|color|secondary","width":"1px"},"top":[],"right":[],"left":[]}},"backgroundColor":"custom-color-1","textColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-color has-custom-color-1-background-color has-text-color has-background has-link-color" style="border-bottom-color:var(--wp--preset--color--secondary);border-bottom-width:1px"><!-- wp:group {"align":"wide","style":{"dimensions":{"minHeight":"96px"}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
+<div class="wp-block-group alignwide" style="min-height:96px"><!-- wp:image {"lightbox":{"enabled":false},"width":"180px","sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full is-resized"><a href="https://interpayments.local/"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/ip-logo-light.png" alt="" class="" style="width:180px"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|secondary"}}}},"textColor":"secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+<div class="wp-block-group has-secondary-color has-text-color has-link-color"><!-- wp:navigation {"ref":488,"layout":{"type":"flex","setCascadingProperties":true,"flexWrap":"nowrap"},"fontSize":"x-small"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

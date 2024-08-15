@@ -1,0 +1,38 @@
+// 
+// 
+@import './libs/index';
+// 
+// 
+@import './blocks/paragraph';
+@import './blocks/buttons';
+@import './blocks/columns';
+@import './blocks/navigation';
+
+// 
+// 
+// 
+
+/* content column adjustments to respect the base padding */
+header.site-header > * {
+    padding-left: var(--wp--custom--spacing--gutter);
+    padding-right: var(--wp--custom--spacing--gutter);
+}
+
+
+
+/* 
+    these adjustments compensate for the sometimes weird behavior of enabling useRootPaddingAwareAlignments in theme.json 
+*/
+.entry-content > .alignfull.has-global-padding {
+    padding-left: var(--wp--custom--spacing--gutter);
+    padding-right: var(--wp--custom--spacing--gutter);
+}
+
+.entry-content > .wp-block-cover.alignfull {
+    padding-left: 0;
+    padding-right: 0;
+    .wp-block-cover__inner-container.has-global-padding {
+        padding-left: var(--wp--custom--spacing--gutter);
+        padding-right: var(--wp--custom--spacing--gutter);
+    }
+}
