@@ -1046,12 +1046,6 @@ ul.is-style-checkmarks li::marker {
   background-color: var(--wp--preset--color--base);
 }
 
-@media (max-width: 779px) {
-  .entry-content > .wp-block-group.alignfull:first-child > * {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
 @media (max-width: 1200px) {
   body.home .has-motion-animation-column .wp-block-spacer {
     display: none;
