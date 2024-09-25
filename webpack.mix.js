@@ -18,7 +18,3 @@ mix
 	.options({
 		processCssUrls: false,
 	});
-// https://browsersync.io/docs/options/
-// mix.browserSync({
-// 	proxy: "hencove-starter.local",
-// });

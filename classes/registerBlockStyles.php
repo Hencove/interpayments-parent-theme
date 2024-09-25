@@ -92,6 +92,9 @@ class RegisterBlockStyles
 				'kadence/accordion' => array(
 					'large-cols-1' => __('Large 1-Column', 'hencovestarter'),
 				),
+				'kadence/rowlayout' => array(
+					'lines-between-columns' => __('Lines Between Columns', 'hencovestarter'),
+				),
 				'ub/tabbed-content-block' => array(
 					'clear' => __('Clear', 'hencovestarter'),
 				)
