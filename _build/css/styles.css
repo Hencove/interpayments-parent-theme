@@ -545,10 +545,10 @@ footer.site-footer .wp-block-social-links svg {
 }
 .wp-block-post-template.is-style-post-template-2 .wp-block-post > .wp-block-columns > .wp-block-column:last-child .is-style-subheadings + .wp-block-kadence-advancedheading {
   font-size: var(--wp--preset--font-size--x-large);
-  max-width: 240px;
 }
 @media (min-width: 1025px) {
   .wp-block-post-template.is-style-post-template-2 .wp-block-post > .wp-block-columns > .wp-block-column:last-child .is-style-subheadings + .wp-block-kadence-advancedheading {
+    max-width: 240px;
     margin-left: 0 !important;
   }
 }

@@ -63,8 +63,8 @@
 				&:last-child {
 					.is-style-subheadings + .wp-block-kadence-advancedheading {
 						font-size: var(--wp--preset--font-size--x-large);
-						max-width: 240px;
 						@include media(">tablet") {
+							max-width: 240px;
 							margin-left: 0 !important;
 						}
 					}
@@ -237,9 +237,6 @@
 			}
 		}
 	}
-}
-
-.wp-block-post-template.is-style-post-template-2 {
 }
 
 //
