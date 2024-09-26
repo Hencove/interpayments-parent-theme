@@ -164,6 +164,14 @@ header.site-header .wp-block-navigation__responsive-container.is-menu-open .wp-b
   }
 }
 
+.wp-block-post-template .wp-block-kadence-rowlayout.is-style-lines-between-columns > .kt-row-column-wrap > .wp-block-kadence-column:not(:first-child)::before {
+  left: calc(-0.5 * var(--wp--preset--spacing--medium));
+}
+@media (max-width: 767px) {
+  .wp-block-post-template .wp-block-kadence-rowlayout.is-style-lines-between-columns > .kt-row-column-wrap > .wp-block-kadence-column:not(:first-child)::before {
+    top: calc(-0.5 * var(--wp--preset--spacing--medium));
+  }
+}
 /* content column adjustments to respect the base padding */
 /* 
     these adjustments compensate for the sometimes weird behavior of enabling useRootPaddingAwareAlignments in theme.json 
