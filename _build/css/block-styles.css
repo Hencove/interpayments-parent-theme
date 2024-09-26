@@ -198,6 +198,7 @@ header.site-header .wp-block-navigation__responsive-container.is-menu-open .wp-b
 }
 @media (max-width: 767px) {
   .wp-block-post-template .wp-block-kadence-rowlayout.is-style-lines-between-columns > .kt-row-column-wrap > .wp-block-kadence-column:not(:first-child)::before {
+    left: 0;
     top: calc(-0.5 * var(--wp--preset--spacing--medium));
   }
 }
