@@ -1,0 +1,10 @@
+// borrowing from the wp-core selector here to match
+// image block as first child should align to top edge of container
+:root :where(.wp-block-image:first-child) {
+	margin-top: 0;
+}
+// image block as last or only child should align to bottom edge of container
+:root :where(.wp-block-image:last-child),
+:root :where(.wp-block-image:only-child) {
+	margin-bottom: 0;
+}
