@@ -52,6 +52,15 @@ body {
   letter-spacing: 2px;
 }
 
+:root :where(p:first-child) {
+  margin-top: 0;
+}
+
+:root :where(p:last-child),
+:root :where(p:only-child) {
+  margin-bottom: 0;
+}
+
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background), .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-primary-background-color {
   border: 2px solid transparent;
 }

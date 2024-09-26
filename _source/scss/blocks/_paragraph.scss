@@ -1,10 +1,21 @@
-// 
-// 
-// 
-// 
-// 
+//
+//
+//
+//
+//
 .is-style-subheadings {
 	font-size: var(--wp--preset--font-size--x-small);
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+// borrowing from the wp-core selector here to match
+// paragraph block as first child should align to top edge of container
+:root :where(p:first-child) {
+	margin-top: 0;
+}
+// paragraph block as last or only child should align to bottom edge of container
+:root :where(p:last-child),
+:root :where(p:only-child) {
+	margin-bottom: 0;
 }
