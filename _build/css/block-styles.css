@@ -52,15 +52,20 @@ body {
   letter-spacing: 2px;
 }
 
-:root :where(p:first-child) {
-  margin-top: 0;
-}
+/* 
 
+// borrowing from the wp-core selector here to match
+// paragraph block as first child should align to top edge of container
+:root :where(p:first-child) {
+	margin-top: 0;
+}
+// paragraph block as last or only child should align to bottom edge of container
 :root :where(p:last-child),
 :root :where(p:only-child) {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
+*/
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background), .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-primary-background-color {
   border: 2px solid transparent;
 }
@@ -125,15 +130,21 @@ body {
     flex-direction: column-reverse;
   }
 }
-:root :where(.wp-block-image:first-child) {
-  margin-top: 0;
-}
+/* 
 
+// borrowing from the wp-core selector here to match
+// image block as first child should align to top edge of container
+:root :where(.wp-block-image:first-child) {
+	margin-top: 0;
+}
+// image block as last or only child should align to bottom edge of container
 :root :where(.wp-block-image:last-child),
 :root :where(.wp-block-image:only-child) {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
+
+*/
 @media (min-width: 600px) {
   header.site-header .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: none;
