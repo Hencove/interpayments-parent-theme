@@ -1,7 +1,9 @@
 //
 //
-body {
+:root {
 	--global-kb-gap-lg: var(--wp--preset--spacing--large);
+	--global-kb-gap-md: var(--wp--preset--spacing--medium);
+	--global-kb-gap-sm: var(--wp--preset--spacing--small);
 	--global-content-edge-padding: var(--wp--custom--spacing--gutter);
 }
 
