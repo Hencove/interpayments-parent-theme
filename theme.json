@@ -290,7 +290,7 @@
 				{
 					"fluid": {
 						"max": "60px",
-						"min": "42px"
+						"min": "40px"
 					},
 					"name": "60px",
 					"size": "60px",
@@ -299,7 +299,7 @@
 				{
 					"fluid": {
 						"max": "72px",
-						"min": "54px"
+						"min": "48px"
 					},
 					"name": "72px",
 					"size": "72px",
