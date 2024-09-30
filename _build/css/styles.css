@@ -91,10 +91,6 @@ h6 {
 }
 
 */
-figure:only-child, figure:last-child {
-  margin-bottom: 0;
-}
-
 /* -- Misc -- */
 ::-moz-placeholder {
   color: var(--wp--preset--color--contrast);
@@ -144,6 +140,10 @@ textarea {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
+}
+
+figure:only-child, figure:last-child {
+  margin-bottom: 0;
 }
 
 body.admin-bar header.site-header {

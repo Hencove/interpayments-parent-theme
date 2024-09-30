@@ -6,7 +6,6 @@
 	opacity: 0.5;
 }
 
-
 /* -- Forms -- */
 
 input,
@@ -44,4 +43,10 @@ input[type="text"],
 textarea {
 	appearance: none;
 	-webkit-appearance: none;
+}
+figure {
+	&:only-child,
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
