@@ -91,6 +91,10 @@ h6 {
 }
 
 */
+figure:only-child, figure:last-child {
+  margin-bottom: 0;
+}
+
 /* -- Misc -- */
 ::-moz-placeholder {
   color: var(--wp--preset--color--contrast);

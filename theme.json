@@ -260,7 +260,7 @@
 				{
 					"fluid": {
 						"max": "36px",
-						"min": "20px"
+						"min": "24px"
 					},
 					"name": "36px",
 					"size": "36px",
@@ -269,7 +269,7 @@
 				{
 					"fluid": {
 						"max": "40px",
-						"min": "20px"
+						"min": "24px"
 					},
 					"name": "40px",
 					"size": "40px",
@@ -278,7 +278,7 @@
 				{
 					"fluid": {
 						"max": "48px",
-						"min": "20px"
+						"min": "24px"
 					},
 					"name": "48px",
 					"size": "48px",
@@ -287,7 +287,7 @@
 				{
 					"fluid": {
 						"max": "60px",
-						"min": "24px"
+						"min": "32px"
 					},
 					"name": "60px",
 					"size": "60px",
@@ -296,7 +296,7 @@
 				{
 					"fluid": {
 						"max": "72px",
-						"min": "32px"
+						"min": "36px"
 					},
 					"name": "72px",
 					"size": "72px",
