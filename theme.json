@@ -225,7 +225,10 @@
 					"slug": "x-small"
 				},
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "18px",
+						"min": "16px"
+					},
 					"name": "Small",
 					"size": "18px",
 					"slug": "small"
@@ -251,7 +254,7 @@
 				{
 					"fluid": {
 						"max": "30px",
-						"min": "20px"
+						"min": "22px"
 					},
 					"name": "xLarge",
 					"size": "30px",
@@ -260,7 +263,7 @@
 				{
 					"fluid": {
 						"max": "36px",
-						"min": "24px"
+						"min": "28px"
 					},
 					"name": "36px",
 					"size": "36px",
@@ -269,7 +272,7 @@
 				{
 					"fluid": {
 						"max": "40px",
-						"min": "24px"
+						"min": "30px"
 					},
 					"name": "40px",
 					"size": "40px",
@@ -278,7 +281,7 @@
 				{
 					"fluid": {
 						"max": "48px",
-						"min": "24px"
+						"min": "36px"
 					},
 					"name": "48px",
 					"size": "48px",
@@ -287,7 +290,7 @@
 				{
 					"fluid": {
 						"max": "60px",
-						"min": "32px"
+						"min": "42px"
 					},
 					"name": "60px",
 					"size": "60px",
@@ -296,7 +299,7 @@
 				{
 					"fluid": {
 						"max": "72px",
-						"min": "36px"
+						"min": "54px"
 					},
 					"name": "72px",
 					"size": "72px",
