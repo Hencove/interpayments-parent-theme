@@ -18,3 +18,8 @@ function search_filter($query)
     }
 }
 // add_action('pre_get_posts', 'search_filter');
+add_filter('ppp_nonce_life', 'my_nonce_life');
+function my_nonce_life()
+{
+    return 432000;
+}

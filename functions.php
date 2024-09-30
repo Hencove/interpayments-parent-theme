@@ -23,12 +23,13 @@ require_once(get_template_directory() . '/functions/register-blocks.php');
 // 
 // 
 
-function add_custom_script_to_head() {
+function add_custom_script_to_head()
+{
     if (function_exists('get_field')) {
         $custom_script = get_field('theme_settings_custom_scripts_in_head', 'option'); // Adjust the second parameter as needed
 
         if ($custom_script) {
-            echo '<script>'.$custom_script.'</script>';
+            echo '<script>' . $custom_script . '</script>';
         }
     }
 }
