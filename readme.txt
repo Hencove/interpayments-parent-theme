@@ -1,4 +1,4 @@
-=== HenCove Starter ===
+=== Hencove Starter ===
 Contributors: Hencove
 Requires at least: 6.0
 Tested up to: 6.4.3
@@ -8,7 +8,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A starter WordPress theme for HenCove
+A starter WordPress theme for Hencove
 
 == Changelog ==
 
