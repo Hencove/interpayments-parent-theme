@@ -1,11 +1,9 @@
-
-
 footer.site-footer {
-	margin-top: var(--wp--custom--spacing--gutter);
-	.wp-block-social-links {
-		svg {
-			width: 40px !important;
-			height: 40px !important;
-		}
-	}
+  margin-top: var(--wp--custom--spacing--gutter);
+  .wp-block-social-links {
+    svg {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
 }

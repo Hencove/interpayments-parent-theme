@@ -4,13 +4,13 @@
 //  ? n-columns stack to 1-column below 1024px
 //
 @include media("<=tablet") {
-	.wp-block-columns:not(.is-not-stacked-on-mobile) {
-		flex-wrap: wrap !important;
-		> .wp-block-column {
-			flex-basis: 100% !important;
-		}
-		&.is-style-columns-reverse {
-			flex-direction: column-reverse;
-		}
-	}
+  .wp-block-columns:not(.is-not-stacked-on-mobile) {
+    flex-wrap: wrap !important;
+    > .wp-block-column {
+      flex-basis: 100% !important;
+    }
+    &.is-style-columns-reverse {
+      flex-direction: column-reverse;
+    }
+  }
 }

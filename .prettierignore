@@ -10,3 +10,11 @@ mix-manifest.json
 
 # Ignore php, due to formatting specifics used in WordPress
 *.php
+
+# Ignore acf-json, as acf will automatically modify
+acf-json
+
+# Ignore auto generated composer and npm files
+composer.json
+package-lock.json
+package.json
