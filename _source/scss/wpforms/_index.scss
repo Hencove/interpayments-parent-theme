@@ -2,70 +2,69 @@
 //
 //
 div.wpforms-container-full {
-	.wpforms-submit-container {
-		button.wpforms-submit[type="submit"] {
-			background-color: var(--wp--preset--color--primary);
-			&:not(:hover):not(:active) {
-                background-color: var(--wp--preset--color--primary);
-			}
-            &:hover {
-                background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),var(--wp--preset--color--primary);
-            }
-		}
-	}
+  .wpforms-submit-container {
+    button.wpforms-submit[type="submit"] {
+      background-color: var(--wp--preset--color--primary);
+      &:not(:hover):not(:active) {
+        background-color: var(--wp--preset--color--primary);
+      }
+      &:hover {
+        background:
+          linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          var(--wp--preset--color--primary);
+      }
+    }
+  }
 }
 
-
-// 
-// 
+//
+//
 .is-the-partner-form {
-	// display: none;
+  // display: none;
 }
 
-// 
-// 
+//
+//
 .is-the-expert-form {
-	display: none;
+  display: none;
 }
 
-
-
-// 
+//
 // 	this is the form selector form...
-// 	
-// 
+//
+//
 #wpforms-form-270 {
-	.wpforms-field-container {
-		> .wpforms-field-select {
-			width: 100%;
-		}
-	}
-	.wpforms-submit-container {
-		display: none;
-	}
+  .wpforms-field-container {
+    > .wpforms-field-select {
+      width: 100%;
+    }
+  }
+  .wpforms-submit-container {
+    display: none;
+  }
 
-	.wpforms-field-select-style-modern {
-		display: flex;
-		flex-flow: row nowrap;
+  .wpforms-field-select-style-modern {
+    display: flex;
+    flex-flow: row nowrap;
 
-		//
-		label,
-		.choices,
-		.choices__item {
-			font-weight: 400;
-			letter-spacing: 2px;
-			line-height: 1.2;
-		}
+    //
+    label,
+    .choices,
+    .choices__item {
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
 
-		// 
-		div.choices {
-			max-width: 540px;
-		}
-	}
+    //
+    div.choices {
+      max-width: 540px;
+    }
+  }
 }
 
 #wpforms-270 {
-	div.choices.wpforms-field-large {
-		flex: 1;
-	}
+  div.choices.wpforms-field-large {
+    flex: 1;
+  }
 }

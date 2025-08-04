@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a,
@@ -13,20 +13,20 @@ input[type="button"],
 input[type="submit"],
 textarea:focus,
 .wp-element-button {
-	transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 a,
 a:focus,
 a:hover,
 a:not(.wp-element-button) {
-	text-decoration-thickness: 1px;
+  text-decoration-thickness: 1px;
 }
 
 b,
 strong,
 th {
-	font-weight: var(--wp--custom--font-weight--medium);
+  font-weight: var(--wp--custom--font-weight--medium);
 }
 /* 
 
