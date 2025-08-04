@@ -50,3 +50,33 @@ figure {
     margin-bottom: 0;
   }
 }
+
+/* - Kadence table styles - */
+.kb-table-container {
+  //
+  &.hc-table {
+    //
+    th p,
+    td p {
+      margin-block-start: unset;
+      margin-block-end: unset;
+    }
+    //
+    td {
+      vertical-align: top;
+    }
+
+    &.is-alternating {
+      tr:not(:has(th)) {
+        &:nth-child(even) {
+          background-color: var(--wp--preset--color--neutral);
+        }
+
+        &:nth-child(odd) {
+          background-color: var(--wp--preset--color--base);
+        }
+      }
+    }
+  }
+  //
+}
